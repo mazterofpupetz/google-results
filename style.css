@@ -30,8 +30,8 @@ header input[type=text] {
 .container {
   width: 100%;
   height: auto;
-  background-color: yellow;
   margin: 0;
+    border-bottom: 1px solid black;
 }
 
 .searchbar {
@@ -68,13 +68,15 @@ header input[type=text] {
 nav {
   width: 100%;
   height: auto;
-  background-color: red;
 }
 
 .icon-links {
-  background-color: orange;
   padding-left: 150px;
   margin: 15px;
+}
+
+.icon-links ul {
+    padding-bottom: 15px;
 }
 
 .icon-links ul li {
@@ -82,16 +84,31 @@ nav {
   padding-left: 10px;
 }
 
+.icon-links ul li a:link,
+.icon-links ul li a:visited {
+    font-size: 13px;
+    color: #545454;
+    font: Arial, Helvetica;
+    text-decoration: underline;
+}
+
+.icon-links ul li a:active {
+    text-decoration: none;
+}
+
+.icon-links ul li a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
 /*-----------RESULTS--------*/
 /*---------------------------*/
 main {
-  background-color: gray;
   width: 650px;
   margin-left: 150px;
 }
 
 main a {
-  color: white;
+  color: #1a0dab;
 }
 
 main span {
@@ -99,70 +116,108 @@ main span {
 }
 
 main p {
-  color: white;
+  color: #545454;
+    font-size: 14px;
+    font: Arial, Helvetica;
 }
 
 main div {
   width: 600px;
 }
 
+main span {
+    display: block;
+    font-size: 16px;
+    font: Arial, Helvetica;
+    color: #006621;
+}
+
 .search-results {
-  background-color: red;
   display: inline-block;
   width: 640px;
+  padding: 10px 0;  
+}
+
+.search-results p {
+    color: #545454;
+    font-size: 14px;
+    font: Arial, Helvetica;
 }
 
 .related-activity {
+    display: none;
   background-color: green;
 }
 
 .result-1 {
-  background-color: purple;
+    display: block;
+    margin-bottom: 30px;
 }
 
+.result-1 a {
+  color: #1a0dab;
+    font-size: 19px;
+    font: Arial, Helvetica;
+}
+
+
+
+
 .result-2 {
-  background-color: purple;
+    margin-bottom: 30px;
 }
 
 .result-3 {
-  background-color: purple;
+    margin-bottom: 30px;
 }
 
 .result-4 {
-  background-color: purple;
+    margin-bottom: 30px;
 }
 
 .result-5 {
-  background-color: purple;
+    margin-bottom: 30px;
 }
 
 .result-6 {
-  background-color: purple;
+    margin-bottom: 30px;
 }
 
 .result-7 {
-  background-color: purple;
+    margin-bottom: 30px;
 }
 
 .result-8 {
-  background-color: purple;
+    margin-bottom: 30px;
 }
 
 .result-9 {
-  background-color: purple;
+    margin-bottom: 30px;
 }
 
 /*-----------PEOPLE ALSO ASK--------*/
 /*---------------------------*/
 .also-ask {
   background-color: white;
-  width: auto;
+  width: 650px;
   display: inline-block;
+    margin-bottom: 30px;
 }
 
+.also-ask ul {
+    list-style: none;
+}
 .also-ask ul li {
   border: 1px solid black;
-  padding: 5px;
+  padding: 10px;
+    font-size: 16px;
+    color: #222222;
+    font: Arial, Helvetica;
+}
+
+.also-ask ul li i {
+    float: right;
+    padding-right: 10px;
 }
 
 /*-----------VIDEO CONTAINER--------*/
@@ -171,34 +226,52 @@ main div {
 .video-container {
   display: flex;
   flex-direction: row;
-  border: 1px solid gray;
   padding: 5px;
+    margin-bottom: 30px;
 }
 .video-container img {
   border-radius: 5px;
+    padding-bottom: 15px;
 }
 
 .video-1 {
   padding: 5px;
   border-radius: 5px;
+    border: 1px solid gray;
 }
 
 .video-2 {
   padding: 5px;
   border-radius: 5px;
+    border: 1px solid gray;
 }
 
 .video-3 {
   padding: 5px;
   border-radius: 5px;
+    border: 1px solid gray;
 }
 
+.video-container a {
+    font-size: 16px;
+    color: #0000ee;
+    font: Arial, Helvetica;
+}
+
+.video-container p,
+.video-container span {
+    font-size: 16px;
+    color: #222;
+    
+}
 /*-----------RELATED SEARCH CONTAINER--------*/
 /*---------------------------*/
 
 .related-search-container {
   width: 638px;
-  background-color: blue;
+    border: 1px solid gray;
+    border-radius: 16px;
+    padding: 10px;
 }
 
 .mid-bar {
@@ -228,13 +301,60 @@ main div {
 
 /*-----------SEARCHES RELATED TO BUILD THIS WEBSITE--------*/
 /*---------------------------*/
+
+.top-bar h1 {
+    color: #70757a;
+    font-size: 14px;
+}
+
+.mid-bar {
+    padding-bottom: 16px;
+}
+.mid-bar h2 {
+    color: #222;
+    font-size: 20px;
+}
+
+.mid-bar h1 {
+    color: #70757a;
+    font-size: 14px;
+}
+
+.mid-bar span {
+     color: #70757a;
+    font-size: 14px;
+}
+
+.bottom-bar-images a {
+    color: #1a0dab;
+}
+
 .btm-related {
   width: 650px;
   display: inline-block;
+    padding-bottom: 30px;
 }
 
+.btm-related-left p {
+    font-size: 14px;
+    color: #1a0dab;
+    padding: 3px 32px 3px 0;
+}
+
+.btm-related-right p {
+    font-size: 14px;
+    color: #1a0dab;
+    padding: 3px 32px 3px 0;
+}
+
+.btm-related h1 {
+    font-size: 20px;
+    color: #222;
+    font: Roboto;
+}
 .btm-related .text {
   width: 650px;
+    padding-bottom: 30px;
 }
 
 .btm-related-left {
@@ -247,11 +367,18 @@ main div {
   display: inline-block;
 }
 
+.feedback a{
+    padding-right: 16px;
+    font-size: 12px;
+    color: #70757a
+}
+
 /*-----------SEARCHES RELATED TO BUILD THIS WEBSITE--------*/
 /*---------------------------*/
 
 .next-pages {
   text-align: center;
+    padding-bottom: 30px;
 }
 
 .next-pages-img {
@@ -259,8 +386,9 @@ main div {
   width: 320px;
   height: auto;
 }
-.next-pages-links {
-
+.next-pages-links a {
+    font-size: 14px;
+    color: #4285f4;
 }
 
 .next-pages-links ul li {
@@ -285,7 +413,7 @@ footer {
   margin: 0;
   padding: 0;
   width: 1640px;
-  background-color: gray;
+  background-color: #f2f2f2;
 }
 
 .location-top {
@@ -293,10 +421,19 @@ footer {
   height: auto;
   display: inline-block;
   padding-left: 150px;
+    padding-bottom: 10px;
+}
+
+.location-top h1 {
+    font-size: 14px;
+    color: #333;
 }
 
 .location-top a {
   display: inline-block;
+    font-size: 14px;
+    color: #5f6368;
+    text-decoration: none;
 }
 
 .location-top span {
@@ -317,4 +454,10 @@ footer {
 
 .btm-nav ul li {
   display: inline-block;
+    padding-right: 25px;
+}
+
+.btm-nav ul li a {
+    font-size: 14px;
+    color: #5f6368;
 }
